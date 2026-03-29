@@ -4,3 +4,49 @@
 .font-inter {
   font-family: "Inter", sans-serif;
 }
+
+@keyframes left-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.cssani {
+  position: relative;
+  animation: left-to-right 0.6s ease-out forwards;
+}
+
+@keyframes right-to-left {
+  0% {
+    opacity: 0;
+    transform: translate(100px);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(75px);
+  }
+  50% {
+    opacity: 0.3;
+    transform: translateX(50px);
+  }
+  75% {
+    opacity: 0.5;
+    transform: translateX(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.cssani-lover {
+  animation: right-to-left 0.9s ease-in forwards;
+}
